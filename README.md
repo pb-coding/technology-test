@@ -5,5 +5,6 @@
 - topic english: To what extent can attitudes and behavior in the context of the digital transformation by manipulating self-efficacy be changed positively?
 
 - language: german
+- ...
 
 ![](technologie_iat.PNG)
