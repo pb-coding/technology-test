@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <!--<script src="script.js"></script>-->
+    <link rel="stylesheet" href="style_new.css">
     <meta charset="utf-8">
-
+ 
     <title>Technologie IAT</title>
 </head>
 <body onload="start()">
-    <h1>Technologie IAT</h1>
+    <h1>Technologie-Assoziationstest</h1>
     <div class="wrapper">
         <div id="iat_box">
             <div id="left">
-                <div id="left_up">Technologie</div>
-                <div id="left_sep">oder</div>
-                <div id="left_down">Gut</div>
+                <div id="left_up"></div>
+                <div id="left_sep"></div>
+                <div id="left_down"></div>
             </div>
             <div id="upper_middle"></div>
             <div id="right">
-                <div id="right_up">Keine Technologie</div>
-                <div id="right_sep">oder</div>
-                <div id="right_down">Schlecht</div>
+                <div id="right_up"></div>
+                <div id="right_sep"></div>
+                <div id="right_down"></div>
             </div>
-            <div id="middle">Google</div>
+            <div id="middle"></div>
+            <div id="vp_code_box">
+                <label for="vp_code">Bitte tragen Sie hier Ihren VP-Code ein:</label>
+                <input type="text" name="vp_code" id="vp_code">
+                <button id="getvpcode" onclick="register()">Registrieren</button>
+            </div>
+            <div id="vp_instructions">
+                <p>Zur Erinnerung:</p>
+                <p>1. Ihr persönlich zugewiesener Buchstabe.</p>
+                <p>2. Dritter Buchstabe des Vornamens Ihrer Mutter</p>
+                <p>3. Letzter Buchstabe des Vornamens Ihres Vaters</p>
+                <p>4. Letzter Buchstabe Ihres Vornamens</p>
+                <p>5. Zweite Zahl des Tages ihres Geburtsdatums</p>
+                <p>6. Zweite Zahl Ihres Geburtsmonats</p>
+            </div>
+            <div id="endscreen_box">
+                <p>BITTE MERKEN SIE SICH FOLGENDEN CODE:</p>
+                <span id="endscreen_code"></span>
+                <p>Sie haben Teil 1 der Studie geschafft. Bitte kehren Sie nun zum Umfragefenster zurück, indem Sie auf das andere offene Browserfenster klicken und tragen dort den hier angezeigten Code ein. Dann geht es mit Teil 2 weiter.</p>
+            </div>
+            <div id="table_div">
+                <table id="table">
+                    <tr>
+                        <td>Kategorie</td>
+                        <td>Items</td>
+                    </tr>
+                    <tr>
+                        <td>Gut</td>
+                        <td>Glücklich, Frieden, Vergnügen, Prachtvoll, Liebe, Lachen, Freude, Wundervoll</td>
+                    </tr>
+                    <tr>
+                        <td>Schlecht</td>
+                        <td>Qual, Verletzt, Misserfolg, Böse, Übel, Schrecklich, Grausam, Scheußlich</td>
+                    </tr>
+                    <tr>
+                        <td>digital / virtuell</td>
+                        <td>digitale Begriffe z.B. Klicken</td>
+                    </tr>
+                    <tr>
+                        <td>analog / real</td>
+                        <td>analoge Begriffe z.B. Notizblock</td>
+                    </tr>
+                </table>
+            </div>
             <div id="output"></div>
-
+ 
         </div>
+        <div id="key_instructions">Bitte die LEERTASTE drücken um fortzufahren</div>
     </div>
     <!--<div class="output_wrapper">
-
+ 
     </div>-->
-
-
+ 
+<script src="script_new.js"></script>
 </body>
 </html>
